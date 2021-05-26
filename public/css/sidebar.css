@@ -1,0 +1,35 @@
+
+aside.sidebar {
+    position: fixed; /*o rostinho happy está fixado pode rolar o scroll do mouse que ele não saído lugar isso porque ele está em outro contexto, ou seja, outra camada*/
+    height: 100%;
+    padding: 32px 24px; /* 3.2 rem 2.4rem outra unidade de medida de pixels*/
+    background: #15C3D6;
+
+    display: flex;
+    flex-direction: column; /*coloca uma img abaixo da outra*/
+    justify-content: space-between; /*Espaço entre elas(img)*/
+    align-items: center;
+}
+
+aside.sidebar footer button {
+    width: 48px;
+    height: 48px;
+    border: none; /*sem bordas*/
+    background: #12AFCB;
+    border-radius: 1.6rem; /*arreondar bordas*/
+    cursor: pointer; /*cursor e mão*/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.2s;
+}
+
+aside.sidebar footer button:hover{
+    background: #17D6EB;
+}
+
+.with-sidebar {
+    padding-left: 110px;
+}
